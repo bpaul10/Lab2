@@ -1,5 +1,5 @@
 """
-Programs name
+player.py
 Bernard Paul
 The purpose of this program is to be the class of the player
 the player will have a name a wallet qith gcoins and the coin 

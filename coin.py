@@ -1,5 +1,5 @@
 """
-Programs name
+Coin.py
 Bernard Paul
 The purpose of this program is to be a class of a single coin.
 This coin is tossable and it only knows the state of itself 
