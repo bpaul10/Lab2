@@ -16,30 +16,30 @@ class Player:
 
     def __init__(self, name, ):
         #initialize the player with a name, wallet of 20 coins, and a coin object
-        self.name = name
-        self.wallet = 20
-        self.coin = Coin()
+        self.__name = name
+        self.__wallet = 20
+        self.__coin = Coin()
         
     def toss_coin(self):
         #players coin toss
-        self.coin.toss()
+        self.__coin.toss()
 
     def get_coin_side(self):
         #gets the side of the coin
-        return self.coin.get_sideup()
+        return self.__coin.get_sideup()
 
     def win_coin(self):
         #player wins a coin
-        self.wallet += 1
+        self.__wallet += 1
 
     def lose_coin(self):
         #player loses a coin
-        self.wallet -= 1
+        self.__wallet -= 1
 
     def get_wallet(self):
         #gets the players wallet amount
-        return self.wallet
+        return self.__wallet
 
     def get_name(self):
         #gets the players name
-        return self.name    
+        return self.__name
