@@ -13,15 +13,14 @@ import random
 class Coin:
     #initializing coin being faced up
     def __init__(self):
-        self.sideup = "Heads"
-
+        self.__sideup = random.choice(["Heads", "Tails"])
     #randomly tosses the coin 
     def toss(self):
         if random.randint(0,1) == 0:
-            self.sideup = "Heads"
+            self.__sideup = "Heads"
         else:
             self.sideup = "Tails"
 
     #tells which side is currently up might combine with toss func
     def get_sideup(self):
-        return self.sideup
+        return self.__sideup
